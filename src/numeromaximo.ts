@@ -1,12 +1,33 @@
-let num: number;
-let max: number = 0;
-let indice: number = 0;
+// MAYOR NUMERO
 
-while (indice < 7) {
-  indice++;
-  num = prompt("Ingrese la temperatura del día " + indice + " de la semana");
-  if (num > max) {
+let num: number = 0;
+let max: number = 0;
+let control: number = 1;
+
+while (control < 2) {
+  num = Number(prompt("Ingrese un número - Ingrese 0 para salir"));
+  if (num === 0) {
+    control = 3;
+  } else if (num > max) {
     max = num;
   }
 }
-console.log("La temperatura maxima es: ", max);
+console.log("El número ingresado mas grande es: ", max);
+
+//----------------------------------------------------------------------
+// MENOR NUMERO
+/*
+let num: number = 0;
+let min: number = 0;
+let control: number = 1;
+
+while (control < 2) {
+  num = Number(prompt("Ingrese un número - Ingrese 0 para salir"));
+  if (num === 0) {
+    control = 3;
+  } else if (min > num) {
+    min = num;
+  }
+}
+console.log("El número ingresado mas chico es: ", min);
+*/
