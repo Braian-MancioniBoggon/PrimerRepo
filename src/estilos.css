@@ -2,6 +2,8 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
   color: #ffffff;
+  background: #212123 !important;
+  height: 100%;
 }
 
 nav {
@@ -35,8 +37,22 @@ nav i {
   background: #212123 !important;
   display: grid;
   gap: 1rem;
-  grid-auto-rows: 22rem;
+  grid-auto-rows: 25rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+}
+
+.contenedorAlt {
+  padding-top: 65px;
+  height: auto;
+  background: #212123 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+}
+
+.contenedorVolver {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
 }
 
 .item {
@@ -53,6 +69,24 @@ nav i {
 .item:hover {
   outline: 1px solid;
   outline-color: #ffffff;
+}
+
+.item img {
+  width: 90%;
+  margin: 15px;
+}
+
+.itemVolver {
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.itemVolver h2 {
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .numeracion {
@@ -78,11 +112,18 @@ nav i {
   width: 40%;
   height: 2px;
   background: #8a5ed1;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .consigna {
   margin: 15px;
-  font-size: 13px;
+  font-size: 14px;
+}
+
+.respuesta {
+  margin: 15px;
+  font-size: 15px;
 }
 
 .boton {
@@ -97,6 +138,17 @@ nav i {
   line-height: 30px;
   background-color: #8a5ed1;
   border-radius: 50px;
+}
+
+.botonTextoAlt {
+  width: fit-content;
+  height: 35px;
+  line-height: 35px;
+  background-color: #8a5ed1;
+  border-radius: 50px;
+  margin-top: 15px;
+  margin-left: 1rem;
+  padding: 1px 15px;
 }
 
 a {
