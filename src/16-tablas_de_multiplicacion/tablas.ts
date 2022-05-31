@@ -1,3 +1,8 @@
+/* CONSIGNA:
+Diseñar un algoritmo que muestre por pantalla la tabla
+de multiplicación del número ingresado por el usuario
+hasta el donde el usuario decida.
+*/
 let btnEnv = document.getElementById("calcular");
 
 let numero1: number = document.getElementById("dato1");

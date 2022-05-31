@@ -1,3 +1,9 @@
+/* CONSIGNA:
+No se han permitido la entrada a menores de 18 ni mayores de 40.
+Para la carga de los datos se usa la función aleatorio.
+Se quiere saber cuántas personas son menores de 21 años,
+cuántas personas mayores o igual a 21 años y cuántas personas en total.
+*/
 const capacidad: number = 270;
 
 let generarNumeroAleatorio = (min: number, max: number) => {

@@ -1,3 +1,7 @@
+/* CONSIGNA:
+Sumar los elementos de cada una de las posiciones de dos arreglos
+y guardar el resultado en otro arreglo.
+*/
 let arreglo1: number[] = new Array(6);
 let arreglo2: number[] = new Array(6);
 let arregloSuma: number[] = new Array(6);

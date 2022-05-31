@@ -1,3 +1,8 @@
+/* CONSIGNA:
+Leer valores del usuario hasta que introduzca un 0.
+Contar la cantidad de valores introducidos que sean
+mayores a 0 y el porcentaje de positivos respecto del total.
+*/
 let numeros: number = 0;
 let contador: number = 0;
 let positivo: number = 0;

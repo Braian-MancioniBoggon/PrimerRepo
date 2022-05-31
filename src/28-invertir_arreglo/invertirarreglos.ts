@@ -1,3 +1,8 @@
+/* CONSIGNA:
+Almacene en un arreglo de tamaño N los números ingresados por el usuario.
+La dimensión N también es ingresada por el usuario.
+Muestre los números del arreglo pero del último al primero.
+*/
 let dimencionArreglo: number = Number(
   prompt("Ingrese la longitud del arreglo")
 );

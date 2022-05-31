@@ -1,3 +1,6 @@
+/* CONSIGNA:
+Calcular el tiempo total de la carrera y el promedio por vuelta.
+*/
 let vuelta1 = document.getElementById("vuelta1");
 let vuelta2 = document.getElementById("vuelta2");
 let vuelta3 = document.getElementById("vuelta3");

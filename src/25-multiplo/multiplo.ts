@@ -1,3 +1,8 @@
+/* CONSIGNA:
+Cree un método esMultiplo con 2 parámetros que devuelva
+el valor lógico verdadero o falso según si el primer número
+que se indique como parámetro es múltiplo del segundo.
+*/
 let numero1 = document.getElementById("numero1");
 let numero2 = document.getElementById("numero2");
 let btnCalcular = document.getElementById("calcular");

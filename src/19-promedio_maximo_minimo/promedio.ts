@@ -1,3 +1,7 @@
+/* CONSIGNA:
+Determinar y mostrar el máximo, el mínimo y la media de todos
+los números ingresados.
+*/
 let suma: number = 0;
 let contador: number = 0;
 let promedio: number;

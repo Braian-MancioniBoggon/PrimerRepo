@@ -1,3 +1,6 @@
+/* CONSIGNA:
+Imprimir en consola cuatro textos almacenados en variables.
+*/
 let palabra1: string = "Este";
 let palabra2: string = "algoritmo";
 let palabra3: string = "es";

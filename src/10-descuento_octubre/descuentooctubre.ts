@@ -1,3 +1,8 @@
+/* CONSIGNA:
+Desarrolle un algoritmo que dada una compra: precio unitario,
+cantidad y el mes, indicados por el usuario, determine si el
+cliente tiene descuento o no.
+*/
 let precios: number = document.getElementById("precio");
 let cantidades: number = document.getElementById("cantidad");
 let meses: number = document.getElementById("mes");

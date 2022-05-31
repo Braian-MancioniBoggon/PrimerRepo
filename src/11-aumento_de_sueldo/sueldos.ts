@@ -1,3 +1,7 @@
+/* CONSIGNA:
+Desarrolle un algoritmo dado el salario actual de un empleado
+determine el aumento de sueldo a aplicar y se lo muestre.
+*/
 let sueldos: number = document.getElementById("sueldo");
 let total = document.getElementById("total");
 let btnCalcular = document.getElementById("calcular");

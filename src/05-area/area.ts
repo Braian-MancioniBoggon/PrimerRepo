@@ -1,13 +1,6 @@
-//Codigo Original
-
-/*let base: number = 3;
-let altura: number = 3;
-let resultado: number = base * altura;
-
-console.log(resultado);*/
-
-// Nuevo Codigo
-
+/* CONSIGNA:
+Calcular el área de un rectangulo.
+*/
 let btnCon = document.getElementById("btnCalcular");
 let base: number = document.forms[0].base;
 let altura: number = document.forms[0].altura;

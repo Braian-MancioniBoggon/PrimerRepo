@@ -1,3 +1,7 @@
+/* CONSIGNA:
+La edad de los chicos va de 3 a 7 años. Las edades son cargadas al azar.
+Muestre todas las edades y el promedio de las mismas.
+*/
 let cantidad: number = Number(
   prompt("Ingrese la cantidad de infantes en el equipo")
 );

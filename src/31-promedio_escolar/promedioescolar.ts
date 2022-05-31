@@ -1,3 +1,7 @@
+/* CONSIGNA:
+Se debe permitir obtener el promedio anual (es decir, de sus tres notas)
+de un alumno (ingresado por el usuario).
+*/
 let nombre: string = prompt("Ingrese el nombre del alumno");
 let arregloNotas: number[] = new Array(3);
 let promedio: number = 0;

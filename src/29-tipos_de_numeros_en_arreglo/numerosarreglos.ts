@@ -1,3 +1,7 @@
+/* CONSIGNA:
+Muestre cuántos números son positivos, cuántos son negativos
+y cuántos ceros hay.
+*/
 let dimencionArreglo: number = Number(
   prompt("Ingrese la longitud del arreglo")
 );

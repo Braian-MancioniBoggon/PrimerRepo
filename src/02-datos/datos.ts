@@ -1,3 +1,6 @@
+/* CONSIGNA:
+Ingresar un dato y mostrarlo por consola.
+*/
 let btnEnv = document.getElementById("btnEnviar");
 let dato = document.forms[0].dato;
 

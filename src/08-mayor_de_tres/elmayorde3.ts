@@ -1,3 +1,7 @@
+/* CONSIGNA:
+Desarrolle un algoritmo que dados tres números determine cuál
+es el mayor de los tres.
+*/
 let numero1: number = document.getElementById("num1");
 let numero2: number = document.getElementById("num2");
 let numero3: number = document.getElementById("num3");

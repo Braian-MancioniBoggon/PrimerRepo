@@ -1,3 +1,8 @@
+/* CONSIGNA:
+Cargue dos arreglos de dimensión N números (la cantidad
+  es ingresada por el usuario). Calcule el producto escalar
+  entre los dos arreglos.
+*/
 let longitud: number = Number(prompt("Ingrese la longitud del arreglo:"));
 
 let arreglo1: number[] = new Array(longitud);

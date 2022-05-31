@@ -1,3 +1,6 @@
+/* CONSIGNA:
+Imprimir en consola 10 entradas de texto.
+*/
 console.log("01 Seleccione las cacerolas a utilizar");
 console.log("02 Engrasar y precalentar");
 console.log("03 Prepare sus ingredientes");

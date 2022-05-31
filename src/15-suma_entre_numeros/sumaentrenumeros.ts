@@ -1,3 +1,7 @@
+/* CONSIGNA:
+Escriba un programa que pida al usuario dos números enteros,
+y luego retorne la suma de todos los números que están entre ellos.
+*/
 let num1: number;
 let num2: number;
 

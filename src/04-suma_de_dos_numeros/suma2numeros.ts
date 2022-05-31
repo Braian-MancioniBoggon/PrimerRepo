@@ -1,3 +1,6 @@
+/* CONSIGNA:
+Ingresar 2 números para sumarlos.
+*/
 let num1: number = document.getElementById("num1");
 let num2: number = document.getElementById("num2");
 let btnSumar = document.getElementById("btnSumar");

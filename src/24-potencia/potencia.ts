@@ -1,3 +1,6 @@
+/* CONSIGNA:
+Realice un programa que devuelva la potencia de un número.
+*/
 let base = document.getElementById("base");
 let exp = document.getElementById("exp");
 let btnCalcular = document.getElementById("calcular");

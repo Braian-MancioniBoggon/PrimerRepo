@@ -1,3 +1,7 @@
+/* CONSIGNA:
+Implemente un método llamado "cantidadDeDivisores"
+que reciba un número entero y devuelva la cantidad de divisores.
+*/
 let numero1 = document.getElementById("numero1");
 let btnCalcular = document.getElementById("calcular");
 

@@ -1,3 +1,6 @@
+/* CONSIGNA:
+Al ingresar un número el algoritmo debe reconocer si es par, impar o 0.
+*/
 let numero: number = 0;
 numero = Number(prompt("Ingrese un numero"));
 if (numero === 0) {
