@@ -36,7 +36,6 @@ nav i {
   height: auto;
   background: #212123 !important;
   display: grid;
-  gap: 1rem;
   grid-auto-rows: 25rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
 }
