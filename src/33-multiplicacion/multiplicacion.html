@@ -2,32 +2,59 @@
   <head>
     <title>Multiplicaión</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div id="app">
-      <ul>
-        <li>
-          <a href="multiplicacion1.html"
-            ><p>
-              Primera parte del enunciado<br /><i
-                >Multiplicación de dos arreglos</i
-              >
-            </p></a
-          >
-        </li>
-        <li>
-          <a href="multiplicacion2.html"
-            ><p>
-              Segunda parte del enunciado<br /><i
-                >Multiplicación de cuatro arreglos</i
-              >
-            </p></a
-          >
-        </li>
-      </ul>
-      <a href="../../index.html"><p>Volver</p></a>
+    <nav>
+      <div>
+        <img
+          src="https://www.globant.com/sites/default/files/2020-04/globant-light-bg-color%402x%20%282%29.png"
+        />
+        <h1>Curso programación full stack 2022<br /><i>1° cuatrimestre</i></h1>
+      </div>
+    </nav>
+    <div class="contenedorAlt">
+      <div class="item">
+        <h1 class="numeracion">01</h1>
+        <p>
+          Implemente un método llamado “multiplicarArreglo” que recibe como
+          parámetros tres arreglos de enteros del mismo tamaño.<br /><br />Los
+          dos primeros arreglos contienen los números que se quieren
+          multiplicar.<br /><br />El tercer arreglo almacena el cálculo de la
+          multiplicación de cada posición de los dos arreglos.
+        </p>
+        <div class="linea"></div>
+        <a href="#" id="botonEjercicio1" class="boton"
+          ><p class="botonTexto">Ver</p></a
+        >
+      </div>
+      <div class="item">
+        <h1 class="numeracion">02</h1>
+        <p>
+          Utilice este método para multiplicar los siguientes cuatro arreglos de
+          tres elementos.<br /><br />v1: [1, 2, 3]<br /><br />v2: [4, 5, 6]<br /><br />v3:
+          [2, 1, 2]<br /><br />v4: [1, 2, 1]
+        </p>
+        <div class="linea"></div>
+        <a href="#" id="botonEjercicio2" class="boton"
+          ><p class="botonTexto">Ver</p></a
+        >
+      </div>
     </div>
+    <div class="contenedorVolver">
+      <div class="itemVolver">
+        <a href="../../index.html" class="boton"
+          ><h2 class="botonTextoAlt">Volver</h2></a
+        >
+      </div>
+    </div>
+    <script src="multiplicacion.ts"></script>
   </body>
 </html>
