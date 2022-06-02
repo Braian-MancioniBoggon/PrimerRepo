@@ -2,14 +2,41 @@
   <head>
     <title>Promedio Escolar</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div id="app">
-      <a href="../../index.html"><p>Volver</p></a>
+    <nav>
+      <div>
+        <img
+          src="https://www.globant.com/sites/default/files/2020-04/globant-light-bg-color%402x%20%282%29.png"
+        />
+        <h1>Curso programación full stack 2022<br /><i>1° cuatrimestre</i></h1>
+      </div>
+    </nav>
+    <div class="contenedorAlt">
+      <div class="item">
+        <h3>Promedio Escolar</h3>
+        <a href="#" id="probar" class="boton">
+          <p class="botonTexto">Probar</p>
+        </a>
+        <div class="linea"></div>
+        <p id="resultado"></p>
+      </div>
     </div>
-
+    <div class="contenedorVolver">
+      <div class="itemVolver">
+        <a href="../../index.html" class="boton">
+          <h2 class="botonTextoAlt">Volver</h2>
+        </a>
+      </div>
+    </div>
     <script src="promedioescolar.ts"></script>
   </body>
 </html>

@@ -2,10 +2,14 @@
 Desarrolle un algoritmo dado el salario actual de un empleado
 determine el aumento de sueldo a aplicar y se lo muestre.
 */
+
+//Declaro los elemementos que voy a usar del html
 let sueldos: number = document.getElementById("sueldo");
 let total = document.getElementById("total");
 let btnCalcular = document.getElementById("calcular");
 
+//Indico que, al pulsar el boton, determine el aumento
+//y lo muestre en consola y en el html
 btnCalcular.addEventListener("click", () => {
   let sueldo: number = Number(sueldos.value);
   if (sueldo <= 15000) {

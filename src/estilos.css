@@ -75,6 +75,13 @@ nav i {
   margin: 15px;
 }
 
+.item input {
+  border-radius: 25px;
+  padding: 5px;
+  margin: 8px;
+  text-align: center;
+}
+
 .itemVolver {
   margin: 15px;
   border-radius: 10px;

@@ -64,10 +64,10 @@ let cargarArregloNumber = (
 
 /*el ejemplo de resolucion en el powerpoint solo funciona 
 si el aula de mayor capacidad se ingresa primero.
-Si el primer aula que se carga tiene una capacidad menor
-a la cantidad de alumno, siempre va a asignar la primer aula que se cargó.
-sigo buscando la forma de corregir eso utilizando arreglos y  que el usuario
-carge todos los datos.
+Si el primer aula que se carga tiene una capacidad menor a la cantidad
+de alumno, siempre va a asignar la primer aula que se cargó.
+sigo buscando la forma de corregir eso utilizando arreglos y
+que el usuario carge todos los datos.
 */
 
 let aulaoptima = (

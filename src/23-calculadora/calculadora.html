@@ -2,24 +2,50 @@
   <head>
     <title>Calculadora</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <h1>Calculadora</h1>
-    <input type="text" id="numero1" placeholder="Primer valor" />
-    <br /><br />
-    <input type="text" id="numero2" placeholder="Segundo valor" />
-    <br />
-    <p id="texto">&nbsp;</p>
-    <input type="text" id="calculo" placeholder="Elegir operación" />
-    <br /><br />
-    <button id="calcular">Calcular</button>
-
-    <div id="app">
-      <a href="../../index.html"><p>Volver</p></a>
+    <nav>
+      <div>
+        <img
+          src="https://www.globant.com/sites/default/files/2020-04/globant-light-bg-color%402x%20%282%29.png"
+        />
+        <h1>Curso programación full stack 2022<br /><i>1° cuatrimestre</i></h1>
+      </div>
+    </nav>
+    <div class="contenedorAlt">
+      <div class="item">
+        <h3>Calculadora</h3>
+        <input type="text" id="numero1" value="" placeholder="Primer valor" />
+        <input type="text" id="numero2" value="" placeholder="Segundo valor" />
+        <p>Ingrese 1 para sumar o 2 para restar</p>
+        <input
+          type="text"
+          id="calculo"
+          value=""
+          placeholder="Elegir operación"
+        />
+        <a href="#" id="calcular" class="boton">
+          <p class="botonTexto">Calcular</p>
+        </a>
+        <div class="linea"></div>
+        <p id="resultado"></p>
+      </div>
     </div>
-
+    <div class="contenedorVolver">
+      <div class="itemVolver">
+        <a href="../../index.html" class="boton">
+          <h2 class="botonTextoAlt">Volver</h2>
+        </a>
+      </div>
+    </div>
     <script src="calculadora.ts"></script>
   </body>
 </html>
