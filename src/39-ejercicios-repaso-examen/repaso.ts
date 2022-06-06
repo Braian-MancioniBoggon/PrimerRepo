@@ -21,8 +21,8 @@ notasAlumno: [7, 6, 9, 5, 8, 7, 10, 4, 8, 8]
 //Indico que, al pulsar el boton, muestre los datos correspondientes en consola y en el html
 ejercicio1.addEventListener("click", () => {
   //Declaro los arreglos y las variables que voy a usar
-  let notasAlumno: number = [7, 6, 9, 5, 8, 7, 10, 4, 8, 8];
-  let meses: string = [
+  let notasAlumno: number[] = [7, 6, 9, 5, 8, 7, 10, 4, 8, 8];
+  let meses: string[] = [
     "Enero",
     "Febrero",
     "Marzo",
@@ -42,7 +42,10 @@ ejercicio1.addEventListener("click", () => {
   let promedio: number = 0;
 
   //Función para saber en que meses desaprobó el alumno
-  let desaproboMeses = (arregloNotas: number, arregloMeses: string): string => {
+  let desaproboMeses = (
+    arregloNotas: number[],
+    arregloMeses: string[]
+  ): string => {
     for (let i: number = 0; i < arregloNotas.length; i++) {
       if (arregloNotas[i] < 6) {
         mesesDesaprobados += arregloMeses[i + 2] + " y ";
@@ -53,8 +56,8 @@ ejercicio1.addEventListener("click", () => {
 
   //Función para obtener la mejor nota y el mes en que se obtuvo
   let obtenerMejorNota = (
-    arregloNotas: number,
-    arregloMeses: string
+    arregloNotas: number[],
+    arregloMeses: string[]
   ): string => {
     let mejorNota: number = arregloNotas[0];
     let mesMejorNota: string = "";
@@ -74,8 +77,8 @@ ejercicio1.addEventListener("click", () => {
 
   //Función para obtener la peor nota y el mes en que se obtuvo
   let obtenerPeorNota = (
-    arregloNotas: number,
-    arregloMeses: string
+    arregloNotas: number[],
+    arregloMeses: string[]
   ): string => {
     let peorNota: number = arregloNotas[0];
     let mesPeorNota: string = "";
@@ -90,7 +93,7 @@ ejercicio1.addEventListener("click", () => {
   };
 
   //Función para calcular el promedio
-  let calcularPromedio = (arregloNotas: number): number => {
+  let calcularPromedio = (arregloNotas: number[]): number => {
     let suma: number = 0;
     for (let i: number = 0; i < arregloNotas.length; i++) {
       suma += arregloNotas[i];
@@ -147,15 +150,15 @@ mostrar el resultado para cada comisión.
 //Indico que, al pulsar el boton, muestre los datos correspondientes en consola y en el html
 ejercicio2.addEventListener("click", () => {
   //Declaro los arreglos y las variables que voy a usar
-  let comisiones: string = ["Comisión A", "Comisión B", "comisión C"];
-  let comisionA: number = [8, 5, 7, 10, 9, 2, 4, 8, 6, 8];
-  let comisionB: number = [3, 6, 8, 5, 4, 7, 7, 4, 6, 8];
-  let comisionC: number = [7, 6, 9, 8, 9, 8, 5, 7, 10, 9];
+  let comisiones: string[] = ["Comisión A", "Comisión B", "comisión C"];
+  let comisionA: number[] = [8, 5, 7, 10, 9, 2, 4, 8, 6, 8];
+  let comisionB: number[] = [3, 6, 8, 5, 4, 7, 7, 4, 6, 8];
+  let comisionC: number[] = [7, 6, 9, 8, 9, 8, 5, 7, 10, 9];
   let mayorPromedio: string = "";
   let menorPromedio: string = "";
 
   //Función para calcular el promedio
-  let calcularPromedio = (arregloNotas: number): number => {
+  let calcularPromedio = (arregloNotas: number[]): number => {
     let suma: number = 0;
     let promedio: number = 0;
     for (let i: number = 0; i < arregloNotas.length; i++) {
@@ -167,12 +170,12 @@ ejercicio2.addEventListener("click", () => {
 
   //Función para calcular que comisión tiene el mejor promedio
   let calcularMejorPromedioComision = (
-    comisionesNombres: string,
-    comision1: number,
-    comision2: number,
-    comision3: number
+    comisionesNombres: string[],
+    comision1: number[],
+    comision2: number[],
+    comision3: number[]
   ): number => {
-    let comisionesPromedios: number = [
+    let comisionesPromedios: number[] = [
       calcularPromedio(comision1),
       calcularPromedio(comision2),
       calcularPromedio(comision3)
@@ -195,12 +198,12 @@ ejercicio2.addEventListener("click", () => {
 
   //Función para calcular que comisión tiene el peor promedio
   let calcularPeorPromedioComision = (
-    comisionesNombres: string,
-    comision1: number,
-    comision2: number,
-    comision3: number
+    comisionesNombres: string[],
+    comision1: number[],
+    comision2: number[],
+    comision3: number[]
   ): number => {
-    let comisionesPromedios: number = [
+    let comisionesPromedios: number[] = [
       calcularPromedio(comision1),
       calcularPromedio(comision2),
       calcularPromedio(comision3)
@@ -222,7 +225,7 @@ ejercicio2.addEventListener("click", () => {
   };
 
   //Función para saber cuantos alumnos desaprobados hay en la comisión
-  let calcularDesaprobados = (comision: number): number => {
+  let calcularDesaprobados = (comision: number[]): number => {
     let cantidadDesaprobados: number = 0;
     for (let i: number = 0; i < comision.length; i++) {
       if (comision[i] < 6) {
@@ -233,7 +236,7 @@ ejercicio2.addEventListener("click", () => {
   };
 
   //Función para obtener la peor nota de la comisión
-  let calcularPeorNota = (comision: number): number => {
+  let calcularPeorNota = (comision: number[]): number => {
     let peorNota: number = comision[0];
     for (let i: number = 0; i < comision.length; i++) {
       if (comision[i] < peorNota) {

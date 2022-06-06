@@ -82,10 +82,10 @@ btn01.addEventListener("click", () => {
 //Indico que, al pulsar el boton, muestre los datos correspondientes en consola y en el html
 btn02.addEventListener("click", () => {
   //Declaro los arreglos
-  let arregloNumero1: number = [1, 2, 3];
-  let arregloNumero2: number = [4, 5, 6];
-  let arregloNumero3: number = [2, 1, 2];
-  let arregloNumero4: number = [1, 2, 1];
+  let arregloNumero1: number[] = [1, 2, 3];
+  let arregloNumero2: number[] = [4, 5, 6];
+  let arregloNumero3: number[] = [2, 1, 2];
+  let arregloNumero4: number[] = [1, 2, 1];
   let arregloResultado: number[] = new Array(3);
   let arregloResultadoAux: number[] = new Array(3);
 

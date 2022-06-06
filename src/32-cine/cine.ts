@@ -9,7 +9,16 @@ let btnProbar = document.getElementById("probar");
 
 //Indico que, al pulsar el boton, muestre los datos correspondientes en consola y en el html
 btnProbar.addEventListener("click", () => {
-  let butacas: boolean = [true, false, false, true, false, true, false, false];
+  let butacas: boolean[] = [
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false
+  ];
   let butacasVacias: number = 0;
 
   //Corroboro las butacas libres dentro del arreglo
