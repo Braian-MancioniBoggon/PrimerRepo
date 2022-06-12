@@ -58,11 +58,14 @@ btnProbar.addEventListener("click", () => {
 
   let cargarArregloNumber = (
     arreglo: number[],
+    arregloNombres: string[],
     longitudArreglo: number
   ): number => {
     for (let i: number = 0; i < longitudArreglo; i++) {
       arreglo[i] = Number(
-        prompt("Ingrese la capacidad de alumnos para el aula N°" + (i + 1))
+        prompt(
+          "Ingrese la capacidad de alumnos para el aula " + arregloNombres[i]
+        )
       );
     }
   };
@@ -71,50 +74,57 @@ btnProbar.addEventListener("click", () => {
 si el aula de mayor capacidad se ingresa primero.
 Si el primer aula que se carga tiene una capacidad menor a la cantidad
 de alumno, siempre va a asignar la primer aula que se cargó.
-sigo buscando la forma de corregir eso utilizando arreglos y
+.
+Pareciera que encontre la forma de corregir eso y
 que el usuario carge todos los datos.
 */
 
-  let aulaoptima = (
+  let capacidadAulaMasGrande = (arreglo: number[], alumnos: number): number => {
+    let aulaGrande: number = 0;
+    for (let i: number = 0; i < alumnos; i++) {
+      if (arreglo[i] > aulaGrande) {
+        aulaGrande = arreglo[i];
+      }
+    }
+    return aulaGrande;
+  };
+
+  let asignarAula = (
     aulas: string[],
     capacidad: number[],
     numeroDeAulas: number,
     alumnos: number
   ): string => {
-    let aulaAsignada: number = 0;
-    let aulaAsignadaAux: number = 1;
+    let aulaOptima: number = 0;
+    let aulaOptimaAux: number = 0;
+    let aulaOptimaAux2: number = capacidadAulaMasGrande(capacidad, alumnos);
+    let aulaGrande: number = capacidadAulaMasGrande(capacidad, alumnos);
     for (let i: number = 0; i < numeroDeAulas; i++) {
-      if (
-        capacidad[i] >= alumnos &&
-        capacidad[i] > capacidad[aulaAsignadaAux]
-      ) {
-        aulaAsignada = i;
-      } else {
-        aulaAsignadaAux++;
+      aulaOptimaAux = capacidad[i] - alumnos;
+      if (alumnos > aulaGrande) {
+        console.log("No hay aula disponible para dicha cantidad de alumnos");
+        resultado.innerHTML =
+          "No hay aula disponible para dicha cantidad de alumnos";
+      } else if (aulaOptimaAux < aulaGrande && aulaOptimaAux >= 0) {
+        if (aulaOptimaAux < aulaOptimaAux2) {
+          aulaOptima = i;
+          aulaOptimaAux2 = aulaOptimaAux;
+        } else {
+          aulaOptimaAux2 = aulaOptimaAux;
+        }
+        console.log("El aula asignada es: " + aulas[aulaOptima]);
+        resultado.innerHTML = "El aula asignada es: " + aulas[aulaOptima];
       }
     }
-    return aulas[aulaAsignada];
   };
 
   cargarArregloString(nombresDeLasAulas, cantidadDeAulas);
-  cargarArregloNumber(capacidadDeLasAulas, cantidadDeAulas);
+  cargarArregloNumber(capacidadDeLasAulas, nombresDeLasAulas, cantidadDeAulas);
   cantidadDeAlumnos = Number(prompt("Ingrese la cantidad de alumnos"));
-
-  console.log(
-    "El aula asignada es: " +
-      aulaoptima(
-        nombresDeLasAulas,
-        capacidadDeLasAulas,
-        cantidadDeAulas,
-        cantidadDeAlumnos
-      )
+  asignarAula(
+    nombresDeLasAulas,
+    capacidadDeLasAulas,
+    cantidadDeAulas,
+    cantidadDeAlumnos
   );
-  resultado.innerHTML =
-    "El aula asignada es: " +
-    aulaoptima(
-      nombresDeLasAulas,
-      capacidadDeLasAulas,
-      cantidadDeAulas,
-      cantidadDeAlumnos
-    );
 });
