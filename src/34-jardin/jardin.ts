@@ -3,7 +3,7 @@ Dado un número de infantes ingresado por el usuario,
 el programa deberá determinar el aula que minimice
 la cantidad de bancos vacíos.
 */
-
+//------------------Codigo original en el que no usé arreglos---------------------------------
 /*
 let cantidadDeAlumnos: number = Number(
   prompt("Ingrese la cantidad de alumnos")

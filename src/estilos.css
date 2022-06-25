@@ -162,6 +162,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
 #btnCalcular {
   margin-top: 10px;
 }
