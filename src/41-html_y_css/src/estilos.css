@@ -1,0 +1,145 @@
+html,
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  background-image: url(src/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+#menu {
+  list-style: none;
+  width: 80%;
+  margin-left: 10%;
+  border: solid 2px grey;
+  border-left: 0px;
+  border-right: 0px;
+  display: flex;
+  padding: 0px;
+}
+
+#menu li {
+  display: inline;
+  padding: 10px;
+  margin: 0px 15px 0px 15px;
+}
+
+.menuItem {
+  width: 25%;
+  text-align: center;
+}
+
+#contenedor {
+  width: 80%;
+  margin-left: 10%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.destacada {
+  border-radius: 10px;
+  flex: 1 1 100% !important;
+  background-image: url(src/noticia1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sombra {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tituloDestacado {
+  padding-top: 20% !important;
+  color: white;
+  width: 50%;
+  padding: 10px;
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.separador {
+  flex: 1 1 100% !important;
+  height: 2px;
+  background-color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.noticia {
+  height: auto;
+  flex: 1 1 20%;
+  min-width: 200px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.noticia img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #2e2e2e;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.footerLogo {
+  flex: 1 1 100% !important;
+  text-align: center;
+  background-color: #414141;
+  margin-bottom: 20px;
+}
+
+.footerLogo img {
+  padding: 20px;
+  height: 100px;
+}
+
+.footerItem {
+  flex: 1 4 20%;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  color: white;
+}
+
+.footerItem ul {
+  list-style: none;
+}
+
+.footerItem li {
+  padding-bottom: 13px;
+}
+
+#volver {
+  height: 15px;
+  width: 50px;
+  position: fixed;
+  top: 0px;
+  left: 100%;
+  margin-left: -65px;
+  background-color: #2e2e2e;
+  border-radius: 0px 0px 0px 5px;
+  padding: 5px 5px 10px 10px;
+}
+
+#volver a {
+  color: white !important;
+  text-decoration: none !important;
+}
