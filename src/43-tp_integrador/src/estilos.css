@@ -1,0 +1,242 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    color: #ffffff;
+    background: #212123 !important;
+    height: 100%;
+  }
+  
+  nav {
+    background: #191919;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
+  }
+  
+  .menu{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #titulo a{
+    display: flex;
+  }
+
+  nav h1 {
+    font-size: 16px;
+    margin-top: 14px;
+  }
+  
+  nav img {
+    margin-top: 14px;
+    text-align: right;
+    height: 38px;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  footer{
+    background: #191919;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);  
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+
+  #imgTienda{
+    float: right;
+  }
+  
+  nav i {
+    font-weight: 100;
+  }
+  
+  .contenedor {
+    padding: 72px 0px 7px 0px;
+    width: 100%;
+    height: auto;
+    background: #212123 !important;
+    display:flex;
+  }
+
+  .tienda {
+    width: 75%;
+    display: grid;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  }
+
+  .carrito {
+    width: 25%;
+    height: auto;
+    margin: 8px 0px 8px 16px;
+    background: #28282a;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 15px;
+  }
+  
+  .item {
+    background: #28282a;
+    margin: 8px 0px 8px 16px;
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+  }
+  
+  .item:hover {
+    outline: 1px solid;
+    outline-color: #ffffff;
+  }
+  
+  .item img {
+    width: 90%;
+  }
+  
+  .titulo {
+    margin: 15px;
+    font-style: italic;
+    font-size: 22px;
+  }
+  
+  .linea {
+    margin-top: 0px;
+    width: 40%;
+    height: 2px;
+    background: #8a5ed1;
+    margin-bottom: 10px;
+  }
+  
+  .producto {
+    margin: 0px;
+    font-size: 15px;
+  }
+  
+  .precio {
+    margin: 0px;
+    font-size: 15px;
+  }
+  
+  .boton {
+    display: block;
+    height: 30px;
+    line-height: 20px;
+    background-color: #8a5ed1;
+    border-radius: 50px;
+    border-color: transparent;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  button {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  #compras{
+    list-style: none;
+    padding: 0px 0px 0px 10px;
+  }
+
+  /**INDEX**/
+
+  #home{
+    padding: 72px 0px 0px 0px;
+    background-image: url(seccion1.jpg);
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000000;
+  }
+
+  #home h2{
+    margin-left: 50px;
+  }
+
+  #home h4{
+    margin: 5px 5px 5px 50px
+  }
+
+  #home p{
+    margin: 5px 50% 5px 50px
+  }
+
+  #seccion2{
+    background-image: url(seccion2.jpg);
+    background-position: top center;
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  #seccion2 h2{
+    padding: 5% 20% 0px 20%;
+    color: #000000;
+  }
+
+  #seccion2 p{
+    padding: 0px 20% 0px 20%;
+    color: #000000;
+    font-size: 14px;
+  }
+
+  #seccion3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -20px;
+  }
+
+  #seccion3Texto{
+    padding-left: 50px;
+  }
+
+  #seccion3imagen{
+    text-align: center;
+  }
+
+  #seccion3imagen img{
+    height: 80%;
+  }
+
+  .seccion{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .separador{
+    width: 100%;
+    height: 250px;
+    background-image: url(separador.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .separador h2{
+    margin-left: 50px;
+  }
+
+  .separador h4{
+    margin: 5px 5px 5px 50px
+  }
+
