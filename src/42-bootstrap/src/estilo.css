@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0px;
+}
+
+#volver {
+  height: 30px;
+  width: 63px;
+  position: fixed;
+  top: 0px;
+  left: 100%;
+  margin-left: -65px;
+  background-color: #2e2e2e;
+  border-radius: 0px 0px 5px 5px;
+  padding: 5px 10px 10px 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+#volver a {
+  color: white !important;
+  text-decoration: none !important;
+}
