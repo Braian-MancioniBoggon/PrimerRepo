@@ -5,15 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boostrap</title>
-    <link rel="stylesheet" href="src/estilos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="src/bootstrap.min.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">El Noticioso</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Argentina</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mundo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Deportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Espectaculos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg col-xs-12">
+          <h2>
+            Tensión en Boca. Un DT interino que saca al capitán y un clima que
+            suma chispazos entre el plantel y Riquelme
+          </h2>
+          <img class="img-fluid" src="src/imagen01.webp" alt="" />
+          <a href="noticia.html"> Ir a noticia</a>
+        </div>
+        <div class="col-lg col-xs-12 d-none d-sm-block">
+          <h2>
+            Tensión en Boca. Un DT interino que saca al capitán y un clima que
+            suma chispazos entre el plantel y Riquelme
+          </h2>
+          <img class="img-fluid" src="src/imagen01.webp" alt="" />
+        </div>
+        <div class="col-lg col-xs-12">
+          <h2>
+            Tensión en Boca. Un DT interino que saca al capitán y un clima que
+            suma chispazos entre el plantel y Riquelme
+          </h2>
+          <img class="img-fluid" src="src/imagen01.webp" alt="" />
+        </div>
+      </div>
+    </div>
     <div id="volver"><a href="../../index.html">Volver</a></div>
+    <script src="src/bootstrap.bundle.min.js"></script>
   </body>
 </html>
