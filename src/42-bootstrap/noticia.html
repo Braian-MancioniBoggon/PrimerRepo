@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="src/bootstrap.min.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="bootstrap.html">El Noticioso</a>
+        <a class="navbar-brand text-white" href="bootstrap.html"
+          >El Noticioso</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -25,47 +27,47 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Argentina</a
+              <a class="nav-link text-white" href="#">Argentina</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Mundo</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-secondary"
+                aria-current="page"
+                href="#"
+                >Deportes</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Mundo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Deportes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Espectaculos</a>
+              <a class="nav-link text-white">Espectaculos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col"><h1>Veamos que pasa</h1></div>
-      </div>
-      <div class="row">
+    <div class="container">
+      <div class="row mt-3">
         <div class="col-lg col-xs-12">
-          <img class="img-fluid" src="src/imagen01.webp" alt="" />
-        </div>
-        <div class="col-lg col-xs-12">
-          <h2>
+          <h1 class="display-5 mb-3">
             Se fue de Bahía desconociendo dónde iba vivir y sin trabajo, hoy
             llegó a la élite de España
-          </h2>
-          <p>
+          </h1>
+          <h4 class="lead mb-4">
             <i>
               Cristian Lambrecht será PF de Bilbao Basket. Estuvo una temporada
               con el equipo femenino Deportivo Pomete.
             </i>
-          </p>
+          </h4>
         </div>
-        <div class="row">
+        <div class="col-lg col-xs-12">
+          <img class="img-fluid" src="src/imagen01.webp" alt="" />
+        </div>
+        <div class="row mt-3">
           <div class="col-12">
-            <p>
+            <p class="blockquote">
               Hace un año Cristian Lambrecht se fue de Bahía con una valija más
               grande de lo habitual. Sus escalas: Estambul, Milán y Lituania.
               Ese itinerario era como integrante de la selección de básquetbol
@@ -81,33 +83,21 @@
               League.
             </p>
           </div>
-          <div class="col-12">
+          <div class="col-lg-8 offset-lg-2 col-xs-12">
             <div
               id="carouselExampleInterval"
               class="carousel slide"
               data-bs-ride="carousel"
             >
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                  <img
-                    src="src/imagen01.webp"
-                    class="d-block w-100"
-                    alt="..."
-                  />
+                <div class="carousel-item active" data-bs-interval="4000">
+                  <img src="src/slide1.jpg" class="d-block w-100" alt="..." />
                 </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                  <img
-                    src="src/imagen01.webp"
-                    class="d-block w-100"
-                    alt="..."
-                  />
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="src/slide2.jpg" class="d-block w-100" alt="..." />
                 </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                  <img
-                    src="src/imagen01.webp"
-                    class="d-block w-100"
-                    alt="..."
-                  />
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="src/slide3.jpg" class="d-block w-100" alt="..." />
                 </div>
               </div>
               <button
@@ -136,8 +126,8 @@
               </button>
             </div>
           </div>
-          <div class="col-12">
-            <p>
+          <div class="col-12 mt-3">
+            <p class="blockquote">
               El plantel, renovado, comenzó el lunes las prácticas. “Esto que me
               está pasando tiene que ver con un proyecto de vida que me plantee
               hace cinco o seis años, que era salir del país, encontrarme con
@@ -171,8 +161,8 @@
       <div class="row">
         <div class="col"></div>
       </div>
-      <div class="row">
-        <div class="cool">
+      <div class="row mb-3">
+        <div class="col-lg-8 offset-lg-2 col-xs-12">
           <div class="form-floating mb-3">
             <input
               type="email"
@@ -191,7 +181,7 @@
             ></textarea>
             <label for="floatingTextarea2">Comentarios</label>
           </div>
-          <div class="d-grid gap-2 col-6 mx-auto">
+          <div class="d-grid gap-2 col-6 mx-auto mt-3">
             <button class="btn btn-primary" type="button">Comentar</button>
           </div>
         </div>
