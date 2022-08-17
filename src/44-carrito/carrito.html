@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Contador</title>
+    <title>Carrito</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,15 +20,17 @@
     </nav>
     <div class="contenedorAlt">
       <div class="item">
-        <h3>Contador</h3>
-        <p id="contador">0</p>
+        <h3>Carrito</h3>
+        <ul id="productos" class="listaSinDeco"></ul>
+        <h5>Total: $<span id="total"></span></h5>
         <div class="linea"></div>
+        <input type="text" id="valor" value="" />
         <div class="dosBotones">
-          <button id="decrementar" class="boton">
-            <p class="botonTexto">Decrementar</p>
-          </button>
           <button id="agregar" class="boton">
             <p class="botonTexto">Agregar</p>
+          </button>
+          <button id="calcular" class="boton">
+            <p class="botonTexto">Calculat total</p>
           </button>
         </div>
       </div>
@@ -40,6 +42,6 @@
         </a>
       </div>
     </div>
-    <script src="contador.ts"></script>
+    <script src="carrito.ts"></script>
   </body>
 </html>

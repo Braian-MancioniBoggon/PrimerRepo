@@ -138,6 +138,12 @@ nav i {
   display: contents;
 }
 
+.dosBotones {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .botonTexto {
   width: 20%;
   height: 30px;
@@ -170,4 +176,9 @@ button {
 
 #btnCalcular {
   margin-top: 10px;
+}
+
+.listaSinDeco {
+  list-style: none;
+  padding: 0px;
 }
